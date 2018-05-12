@@ -1,0 +1,5 @@
+export const SET_AUTH = 'SET_AUTH';
+export const SET_AUTH_ERROR = 'SET_AUTH_ERROR';
+
+// 商品管理/商品分类
+export const SET_GOODS_CUSTOM_CATEGORY_STATUS = 'SET_GOODS_CUSTOM_CATEGORY_STATUS';

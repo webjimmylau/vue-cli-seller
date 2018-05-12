@@ -1,0 +1,293 @@
+@import 'normalize';
+
+body {
+  font-family: tahoma, arial, \5b8b\4f53;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #666666;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+div {
+  box-sizing: border-box;
+}
+
+ul,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #666666;
+  outline: none;
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    color: #cccccc;
+  }
+}
+
+img {
+  outline: none;
+  vertical-align: bottom;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  border: 0;
+  outline: none;
+  &::-moz-placeholder {
+    opacity: 1;
+    color: #cccccc;
+  }
+  &:-ms-input-placeholder {
+    color: #cccccc;
+  }
+  &::-webkit-input-placeholder {
+    color: #cccccc;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgba(194, 194, 194, 1);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(194, 194, 194, .7);
+}
+
+.float-l {
+  float: left;
+}
+.float-r {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  box-sizing: border-box;
+  content: ' ';
+}
+.clearfix:after {
+  clear: both;
+}
+
+.text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+.m-l-10 {
+  margin-left: 10px;
+}
+.m-r-10 {
+  margin-right: 10px;
+}
+.m-t-5 {
+  margin-top: 5px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-t-15 {
+  margin-top: 15px;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-t-30 {
+  margin-top: 30px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+.m-b-15 {
+  margin-bottom: 15px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-t-b {
+  margin-top: -1px;
+}
+.m-l-b {
+  margin-left: -1px;
+}
+
+.w-40{
+  width: 40px;
+}
+
+.w-percent-5 {
+  width: 5%;
+}
+.w-percent-10 {
+  width: 10%;
+}
+.w-percent-15 {
+  width: 15%;
+}
+.w-percent-20 {
+  width: 20%;
+}
+.w-percent-25 {
+  width: 25%;
+}
+.w-percent-30 {
+  width: 30%;
+}
+.w-percent-50 {
+  width: 50%;
+}
+
+.font-yahei {
+  font-style: normal;
+  font-family: 'Microsoft YaHei';
+}
+.font-st {
+  font-style: normal;
+  font-family: \5b8b\4f53;
+}
+
+.red {
+  color: red;
+}
+.grayDark {
+  color: #333333;
+}
+.grayDim {
+  color: #666666;
+}
+.gray {
+  color: #999999;
+}
+.font-color-orange {
+  color: $orange;
+}
+.f-s-12 {
+  font-size: 12px;
+}
+.t-a-r {
+  text-align: right;
+}
+.t-a-l {
+  text-align: left;
+}
+.hide {
+  display: none;
+}
+
+.tips-box {
+  padding: 8px 10px;
+  border: 1px solid #ffcc66;
+  background-color: #fff7e6;
+  color: #666666;
+  p {
+    line-height: 20px;
+  }
+}
+
+.overflow-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 12px;
+    overflow: hidden;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(194, 194, 194, 1);
+  }
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background-color: rgba(194, 194, 194, .7);
+  }
+}
+.scroll-bar {
+  padding-right: 12px;
+  padding-right: 17px!important \9;
+
+  @media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+    padding-right: 17px!important \9;
+  }
+}
+
+/*
+* animate.css
+* http://daneden.me/animate
+* Version 3.5.2
+*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}

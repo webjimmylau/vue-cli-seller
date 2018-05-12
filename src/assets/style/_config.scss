@@ -1,0 +1,29 @@
+$minWidth: 1024px;
+$orange: #ed6c00;
+$lineOrange: #f18933;
+$gray: #ddd;
+$borderGray: #e5e5e5;
+$lineGray: #eee;
+
+/************ mixin ************/
+@mixin triangleTop($color: currentcolor, $size: .5em) {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-bottom: ($size * 1) solid $color;
+  $perpendicular-borders: $size solid transparent;
+  border-left: $perpendicular-borders;
+  border-right: $perpendicular-borders;
+}
+
+@mixin triangleBottom($color: currentcolor, $size: .5em) {
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-top: ($size * 1) solid $color;
+  $perpendicular-borders: $size solid transparent;
+  border-left: $perpendicular-borders;
+  border-right: $perpendicular-borders;
+}
